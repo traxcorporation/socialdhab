@@ -1,0 +1,1 @@
+json.extract! @micropost, :user, :content, :created_at, :updated_at

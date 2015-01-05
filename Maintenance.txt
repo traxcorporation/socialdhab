@@ -1,0 +1,65 @@
+C:\Users\ytraore\Documents\ruby\traxrail>rake routes
+                 Prefix Verb   URI Pattern                             Controlle
+r#Action
+           sessions_new GET    /sessions/new(.:format)                 sessions#
+new
+              users_new GET    /users/new(.:format)                    users#new
+
+                   root GET    /                                       static_pa
+ges#home
+                   help GET    /help(.:format)                         static_pa
+ges#help
+                  about GET    /about(.:format)                        static_pa
+ges#about
+                contact GET    /contact(.:format)                      static_pa
+ges#contact
+                 signup GET    /signup(.:format)                       users#new
+
+                  login GET    /login(.:format)                        sessions#
+new
+                        POST   /login(.:format)                        sessions#
+create
+                 logout DELETE /logout(.:format)                       sessions#
+destroy
+                  users GET    /users(.:format)                        users#ind
+ex
+                        POST   /users(.:format)                        users#cre
+ate
+               new_user GET    /users/new(.:format)                    users#new
+
+              edit_user GET    /users/:id/edit(.:format)               users#edi
+t
+                   user GET    /users/:id(.:format)                    users#sho
+w
+                        PATCH  /users/:id(.:format)                    users#upd
+ate
+                        PUT    /users/:id(.:format)                    users#upd
+ate
+                        DELETE /users/:id(.:format)                    users#des
+troy
+edit_account_activation GET    /account_activations/:id/edit(.:format) account_a
+ctivations#edit
+        password_resets POST   /password_resets(.:format)              password_
+resets#create
+     new_password_reset GET    /password_resets/new(.:format)          password_
+resets#new
+    edit_password_reset GET    /password_resets/:id/edit(.:format)     password_
+resets#edit
+         password_reset PATCH  /password_resets/:id(.:format)          password_
+resets#update
+                        PUT    /password_resets/:id(.:format)          password_
+resets#update
+             microposts POST   /microposts(.:format)                   micropost
+s#create
+              micropost DELETE /microposts/:id(.:format)               micropost
+s#destroy
+
+
+___________________________________________________________________________________
+La mise en place sur serveur : notre application est déjà déployée sur Heroku.
+Nous allons vous transmettre le lien pour y accèder.
+___________________________________________________________________________________
+
+Nous avons mis en place le format JSON pour le controller users et microposts mais 
+il n'y a que le lien http://localhost:3000/users.json qui marche mais l'autre K O.
+____________________________________________________________________________________
