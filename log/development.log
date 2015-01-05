@@ -19720,3 +19720,837 @@ Processing by UsersController#show as HTML
   Rendered layouts/_header.html.erb (0.0ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 819ms (Views: 812.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-05 18:34:42 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?[0m  [["user_id", 10]]
+  Rendered shared/_user_info.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (5.0ms)
+  Rendered shared/_micropost_form.html.erb (24.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (62.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 647ms (Views: 529.4ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:34:44 +0100
+
+
+Started GET "/" for ::1 at 2015-01-05 18:34:47 +0100
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?[0m  [["user_id", 10]]
+  Rendered shared/_user_info.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (5.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (14.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 194ms (Views: 192.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-05 18:34:49 +0100
+Processing by StaticPagesController#home as HTML
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?[0m  [["user_id", 10]]
+  Rendered shared/_user_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (25.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (33.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 192ms (Views: 189.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/help" for ::1 at 2015-01-05 18:34:51 +0100
+Processing by StaticPagesController#help as HTML
+  Rendered static_pages/help.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 177ms (Views: 176.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users" for ::1 at 2015-01-05 18:34:52 +0100
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "users"
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" LIMIT 30 OFFSET 0[0m
+  Rendered users/index.html.erb within layouts/application (3493.5ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 3679ms (Views: 3673.6ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users" for ::1 at 2015-01-05 18:34:56 +0100
+Processing by UsersController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" LIMIT 30 OFFSET 0
+  Rendered users/index.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 199ms (Views: 196.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/users/10" for ::1 at 2015-01-05 18:34:58 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mMicropost Exists (0.0ms)[0m  SELECT  1 AS one FROM "microposts" WHERE "microposts"."user_id" = ? LIMIT 1  [["user_id", 10]]
+  [1m[36m (0.0ms)[0m  [1mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?[0m  [["user_id", 10]]
+  [1m[35mMicropost Load (1.0ms)[0m  SELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = ?  ORDER BY "microposts"."created_at" DESC LIMIT 30 OFFSET 0  [["user_id", 10]]
+  Rendered microposts/_micropost.html.erb (1.0ms)
+  Rendered users/show.html.erb within layouts/application (47.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 235ms (Views: 231.1ms | ActiveRecord: 1.0ms)
+
+
+Started DELETE "/logout" for ::1 at 2015-01-05 18:35:03 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"ycUMvCVyWzQf28wQ1vG5SPrdfDEEtdcC0WWAGPffuwPmYd0BXImzeNgDIf9jiE2wP4fD9k2E9rCIv9E8kJyNIw=="}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-05 18:35:03 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 189ms (Views: 183.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:35:03 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:35:04 +0100
+
+
+Started GET "/assets/esiea.png" for ::1 at 2015-01-05 18:35:04 +0100
+
+
+Started GET "/" for ::1 at 2015-01-05 18:36:03 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 179ms (Views: 178.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-05 18:36:05 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 177ms (Views: 176.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-05 18:36:07 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 183ms (Views: 182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/assets/esiea.png" for ::1 at 2015-01-05 18:36:07 +0100
+
+
+Started GET "/" for ::1 at 2015-01-05 18:37:11 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 181ms (Views: 180.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:37:11 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:37:11 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:37:11 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:37:11 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:37:11 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:37:11 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/assets/esiea.png" for ::1 at 2015-01-05 18:37:12 +0100
+
+
+Started GET "/signup" for ::1 at 2015-01-05 18:37:13 +0100
+Processing by UsersController#new as HTML
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered users/new.html.erb within layouts/application (18.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 198ms (Views: 197.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for ::1 at 2015-01-05 18:37:32 +0100
+Processing by SessionsController#new as HTML
+  Rendered sessions/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_shim.html.erb (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 192ms (Views: 192.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for ::1 at 2015-01-05 18:37:35 +0100
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2m3VFaFdCtoIJzLbHn5jomleGvFKLiC8SYfs9g8Glkz1yQSo2Kbils//3zSrB5darASlNgMfAQ4QXb3SaEWgbA==", "session"=>{"email"=>"ares@ares.fr", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT 1[0m  [["email", "ares@ares.fr"]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/users/10
+Completed 302 Found in 82ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/10" for ::1 at 2015-01-05 18:37:35 +0100
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mMicropost Exists (0.0ms)[0m  [1mSELECT  1 AS one FROM "microposts" WHERE "microposts"."user_id" = ? LIMIT 1[0m  [["user_id", 10]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?  [["user_id", 10]]
+  [1m[36mMicropost Load (0.0ms)[0m  [1mSELECT  "microposts".* FROM "microposts" WHERE "microposts"."user_id" = ?  ORDER BY "microposts"."created_at" DESC LIMIT 30 OFFSET 0[0m  [["user_id", 10]]
+  Rendered microposts/_micropost.html.erb (2.0ms)
+  Rendered users/show.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  [1m[35mUser Load (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 10]]
+  Rendered layouts/_header.html.erb (2.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 197ms (Views: 195.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:37:36 +0100
+
+
+Started GET "/" for ::1 at 2015-01-05 18:37:40 +0100
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?  [["user_id", 10]]
+  Rendered shared/_user_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (4.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (12.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 244ms (Views: 241.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-05 18:39:26 +0100
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.0ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?  [["user_id", 10]]
+  Rendered shared/_user_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (3.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 202ms (Views: 200.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:39:27 +0100
+
+
+Started GET "/" for ::1 at 2015-01-05 18:39:57 +0100
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?  [["user_id", 10]]
+  Rendered shared/_user_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (3.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (9.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 195ms (Views: 192.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:39:58 +0100
+
+
+Started GET "/" for ::1 at 2015-01-05 18:39:59 +0100
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?  [["user_id", 10]]
+  Rendered shared/_user_info.html.erb (2.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (4.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (10.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 193ms (Views: 190.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:40:00 +0100
+
+
+Started GET "/" for ::1 at 2015-01-05 18:42:46 +0100
+Processing by StaticPagesController#home as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (1.0ms)[0m  SELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = ?  [["user_id", 10]]
+  Rendered shared/_user_info.html.erb (3.0ms)
+  Rendered shared/_error_messages.html.erb (0.0ms)
+  Rendered shared/_micropost_form.html.erb (3.0ms)
+  Rendered static_pages/home.html.erb within layouts/application (11.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (1.0ms)
+Completed 200 OK in 235ms (Views: 211.1ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:42:46 +0100
+
+
+Started DELETE "/logout" for ::1 at 2015-01-05 18:42:49 +0100
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qZ7/PyPO4KEDGB+R+jd0cefHFGTQwC3wbbqwc/UFMS+GOi6CWjUI7cTA8n5PToCJIp2ro5nxDEI0YOFXkkYHDw=="}
+  [1m[36mUser Load (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-01-05 18:42:49 +0100
+Processing by StaticPagesController#home as HTML
+  Rendered static_pages/home.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_shim.html.erb (0.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+  Rendered layouts/_footer.html.erb (0.0ms)
+Completed 200 OK in 183ms (Views: 182.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/custom.css?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/microposts.css?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/sessions.css?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/static_pages.css?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/users.css?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/application.css?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/jquery.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/turbolinks.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/microposts.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/sessions.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/static_ages.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/bootstrap-sprockets" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/bootstrap" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/static_pages.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/users.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/bootstrap.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/application.js?body=1" for ::1 at 2015-01-05 18:42:49 +0100
+
+
+Started GET "/assets/esiea.png" for ::1 at 2015-01-05 18:42:49 +0100
