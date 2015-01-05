@@ -9,7 +9,7 @@ class MicropostsController < ApplicationController
       format.json { render json: @microposts }
 	   @micropost = current_user.microposts.build(micropost_params)
     if @micropost.save
-      flash[:success] = "Commentaires crée!"
+      flash[:success] = "Commentaires cree!"
       redirect_to root_url
     else
       render 'static_pages/home'
